@@ -1,0 +1,46 @@
+# 编译产物
+*.exe
+*.exe.config
+SpaceHunter.new.exe
+!build/Release/*.exe
+
+# 调试中间物
+*.pdb
+*.obj
+*.ilk
+_t.exe
+_x.exe
+_probe.exe
+_dbg.exe
+_test.exe
+_selftest.exe
+SpaceHunter_*.log
+
+# 临时文件
+*.txt.bak
+~$*
+*.tmp
+*.shw~
+
+# 崩溃日志与运行时产物（本来就在 %LOCALAPPDATA%，这里双保险）
+崩溃日志.txt
+排除项.txt
+
+# IDE / 编辑器
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.swp
+*~
+
+# 系统
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 本地构建缓存
+src_bak/
+*.orig
+*.rej
