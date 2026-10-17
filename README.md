@@ -5,6 +5,20 @@
 
 一个单文件 Windows 桌面程序。不用安装，不用 .NET 运行时，双击就能跑。
 
+---
+
+## ⬇️ 下载
+
+### **[点这里下载 SpaceHunter.exe](https://github.com/benkeshengkk/SpaceHunter/releases/latest)**
+
+打开 Releases 页 → 下载 `SpaceHunter.exe` → 双击就能用。
+（[所有版本](https://github.com/benkeshengkk/SpaceHunter/releases)）
+
+- 102 KB，单个文件
+- Windows 7 / 8 / 10 / 11，32 位和 64 位都行
+- **不需要**装 .NET、Visual Studio 或任何运行库
+- 杀毒软件很可能误报 → 看下面那一段
+
 <img src="docs/screenshot-clean.png" alt="垃圾清单" width="600">
 
 ---
@@ -15,17 +29,14 @@
 > 这几件事凑在一起，正好是启发式引擎最爱报警的组合。
 > **报毒基本是误报**，但你需要知道怎么处理：
 >
-> **如果你刚下载就被拦：**
-> 1. 先确认文件还在（多半只是被隔离，不是被删了）
-> 2. 把 `SpaceHunter.exe` 加进信任区 / 白名单
-> 3. Windows Defender：左下角「Windows 安全中心」→「病毒和威胁防护」
->    →「保护历史记录」→ 找到被拦的那条 →「恢复」→「排除项」
-> 4. 右键 exe →「属性」→ 如果底部有「解除锁定」勾上它 → 确定
+> | 现象 | 怎么办 |
+> |---|---|
+> | 一下载就被隔离 | 文件多半还在，只是被隔离了。把你信任的杀软里把它加白名单 |
+> | Windows Defender 拦截 | 「Windows 安全中心」→「病毒和威胁防护」→「保护历史记录」→ 找到那条 →「恢复」→「排除项」 |
+> | 文件带「已阻止」标记 | 右键 exe →「属性」→ 底部勾上「解除锁定」→ 确定 |
 >
-> **如果你自己编译的版本被杀软盯上：**
-> 源码公开就是为了这个。放行即可，或者自己加签名。
->
-> **常见误报来源**：卡巴斯基、360、Windows Defender（启发式引擎）
+> 常见误报来源：卡巴斯基、360、Windows Defender（启发式引擎）。
+> 你自己编译的话，源码公开就是为了这个 —— 放行即可。
 
 ---
 
@@ -59,8 +70,10 @@
 
 | | |
 |---|---|
-| <img src="docs/screenshot-clean.png" alt="垃圾清单"> | <img src="docs/screenshot-map.png" alt="空间地图"> |
+| <img src="docs/screenshot-clean.png" alt="垃圾清单" width="100%"> | <img src="docs/screenshot-map.png" alt="空间地图" width="100%"> |
 | 垃圾清单 | 空间地图 |
+
+> 截图还没放进来（`docs/` 里只有说明文件）。想补的话按那份说明抓图即可。
 
 ---
 
@@ -85,7 +98,7 @@
 
 ## 使用
 
-下载 `SpaceHunter.exe`，双击。
+下载 [`SpaceHunter.exe`](https://github.com/benkeshengkk/SpaceHunter/releases/latest)，双击。
 
 第一次开机会自动扫一遍所有固定磁盘，几十秒到几分钟不等（取决于盘里有多少文件）。
 
